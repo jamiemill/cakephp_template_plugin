@@ -1,25 +1,25 @@
 <?php
 
-class DenormalizedItem extends CakeTestModel {
-	var $actsAs = array('Containable','Denormalized.Denormalized');
-	var $belongsTo = array('DenormalizedItemParent');
-	var $hasMany = array('DenormalizedItemChild');
+class MypluginItem extends CakeTestModel {
+	var $actsAs = array('Containable','Myplugin.Myplugin');
+	var $belongsTo = array('MypluginItemParent');
+	var $hasMany = array('MypluginItemChild');
 }
 
-class DenormalizedItemChild extends CakeTestModel {
-	var $actsAs = array('Containable','Denormalized.Denormalized');
-	var $belongsTo = array('DenormalizedItem');
+class MypluginItemChild extends CakeTestModel {
+	var $actsAs = array('Containable','Myplugin.Myplugin');
+	var $belongsTo = array('MypluginItem');
 }
 
-class DenormalizedItemParent extends CakeTestModel {
-	var $actsAs = array('Containable','Denormalized.Denormalized');
-	var $belongsTo = array('DenormalizedItemGrandparent');
-	var $hasMany = array('DenormalizedItem');
+class MypluginItemParent extends CakeTestModel {
+	var $actsAs = array('Containable','Myplugin.Myplugin');
+	var $belongsTo = array('MypluginItemGrandparent');
+	var $hasMany = array('MypluginItem');
 }
 
-class DenormalizedItemGrandparent extends CakeTestModel {
-	var $actsAs = array('Containable','Denormalized.Denormalized');
-	var $hasMany = array('DenormalizedItemParent');
+class MypluginItemGrandparent extends CakeTestModel {
+	var $actsAs = array('Containable','Myplugin.Myplugin');
+	var $hasMany = array('MypluginItemParent');
 }
 
 

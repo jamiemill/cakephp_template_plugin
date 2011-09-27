@@ -1,6 +1,6 @@
 <?php
 
-class DenormalizedBehavior extends ModelBehavior {
+class MypluginBehavior extends ModelBehavior {
 	
 	var $_defaults = array();
 

@@ -1,8 +1,8 @@
 <?php
 
-class DenormalizedItemGrandparentFixture extends CakeTestFixture {
+class MypluginItemGrandparentFixture extends CakeTestFixture {
 
-	var $name = 'DenormalizedItemGrandparent';
+	var $name = 'MypluginItemGrandparent';
 
 	var $fields = array(
 		'id' => array('type' => 'integer', 'key' => 'primary'),
